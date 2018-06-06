@@ -1,6 +1,9 @@
 /* ================================= 
   Base Element Styles
 ==================================== */
+* {
+	box-sizing: border-box;
+}
 
 body {
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
@@ -22,6 +25,10 @@ a {
 	text-decoration: none;
 }
 
+a:hover {
+	opacity: 0.7;
+}
+
 
 
 /* ================================= 
@@ -29,6 +36,15 @@ a {
 ==================================== */
 
 /* ---- Navigation ---- */
+
+.logo {
+	border-radius: 50%;
+	background-color: white;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+}
 
 .name {
 	font-size: 2.5em;
@@ -42,40 +58,41 @@ a {
 .main-nav li {
 	list-style-type: none;
 	display: inline-block;
-	padding: 10px 15px;
+	padding: 5px 15px;
 }
 
-.main-nav a:hover {
-	opacity: 0.7;
-}
 
 /* ---- Layout Containers ---- */
 
+.container {
+	padding-left: 1em;
+	padding-right: 1em;
+	min-height: 
+}
+
 .main-header {
-	padding-top: .95em;
-	padding-bottom: .95em;
+	padding-top: .5em;
+	padding-bottom: .5em;
 	background-color: #001933;
 }
 
 .main-footer {
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 	width: 100%;
 	background-color: #c0c0c0;
 	text-align: center;
+	height: 20px;
 }
 
 
 /* ---- Social Media ---- */
 
 .fa {
-    padding: 10px;
-    font-size: 10px;
-    width: 10px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 20%;
-	margin: 10px 10px;
+	align-content: center;
+    border-radius: 50%;
+	padding: 10px;
+	margin: 10px;
 }
 
 .fa-facebook {
@@ -93,12 +110,47 @@ a {
   color: white;
 }
 
-.fa:hover {
-	opacity: 0.7;
-}
-
 /* ================================= 
   Media Queries
 ==================================== */
 
+/* ---- For mobile phones ---- */
+
+@media (min-width: 768px) {
+	.container {
+		width: 90%;
+		max-width: 1150px;
+		margin: 0 auto;
+	}
+	
+	.col {
+		float: left;
+		padding-left: auto;
+		padding-right: auto;
+	}
+	
+	.cantmiss {
+		width: 50%;
+	}
+	
+	.review {
+		width: 50%;
+	}
+	
+	.interview {
+		width: 50%;
+	}
+	
+	.flickr {
+		width: 50%
+	}
+}
+
 /* ---- Columns ---- */
+
+
+
+
+
+
+
