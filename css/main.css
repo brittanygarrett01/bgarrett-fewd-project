@@ -29,6 +29,28 @@ a:hover {
 	opacity: 0.7;
 }
 
+img {
+	max-width: 100%;
+}
+
+figure {
+	margin: 0;
+	line-height: 0;
+	position: relative;
+}
+
+figcaption {
+	font-size: 1.1em;
+	background: rgba(0,153,153, .85);
+	color: white;
+	padding: 1em;
+	
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+
 
 
 /* ================================= 
@@ -44,6 +66,8 @@ a:hover {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 20px;
+	width: 100px;
+	height: 100px;
 }
 
 .name {
@@ -64,16 +88,14 @@ a:hover {
 
 /* ---- Layout Containers ---- */
 
-.container {
-	padding-left: 1em;
-	padding-right: 1em;
-	min-height: 
-}
-
 .main-header {
 	padding-top: .5em;
 	padding-bottom: .5em;
-	background-color: #001933;
+	background: #001933;
+}
+
+.main-content {
+	padding: .5em;
 }
 
 .main-footer {
@@ -82,33 +104,13 @@ a:hover {
 	width: 100%;
 	background-color: #c0c0c0;
 	text-align: center;
-	height: 20px;
+	padding: 1em 0;
 }
 
-
-/* ---- Social Media ---- */
-
-.fa {
-	align-content: center;
-    border-radius: 50%;
-	padding: 10px;
-	margin: 10px;
+.col {
+	padding: .5em;
 }
 
-.fa-facebook {
-	background: #3B5998;
-  	color: white;
-}
-
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-
-.fa-instagram {
-  background: #125688;
-  color: white;
-}
 
 /* ================================= 
   Media Queries
@@ -117,36 +119,11 @@ a:hover {
 /* ---- For mobile phones ---- */
 
 @media (min-width: 768px) {
-	.container {
-		width: 90%;
-		max-width: 1150px;
-		margin: 0 auto;
-	}
+
+
 	
-	.col {
-		float: left;
-		padding-left: auto;
-		padding-right: auto;
-	}
-	
-	.cantmiss {
-		width: 50%;
-	}
-	
-	.review {
-		width: 50%;
-	}
-	
-	.interview {
-		width: 50%;
-	}
-	
-	.flickr {
-		width: 50%
-	}
 }
 
-/* ---- Columns ---- */
 
 
 
