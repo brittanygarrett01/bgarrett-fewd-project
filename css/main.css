@@ -102,9 +102,10 @@ figcaption {
 	position: fixed;
 	bottom: 0;
 	width: 100%;
-	background-color: #c0c0c0;
+	background: #001933;
 	text-align: center;
 	padding: 1em 0;
+	color: white;
 }
 
 .col {
