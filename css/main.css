@@ -10,7 +10,6 @@ body {
 	flex-direction: column;
 	min-height: 100vh;
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	color: #404040;
 	line-height: 1.4;
 	margin: 0;
 }
@@ -22,12 +21,13 @@ h1 {
 p {
 	font-size: .95em;
 	margin-bottom: 1.5em;
+	color: #404040;
 }
 
 ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  	margin: 0;
+  	padding: 0;
+  	list-style: none;
 }
 
 a {
@@ -80,6 +80,7 @@ figcaption {
 .name {
 	font-size: 2.5em;
 	margin: 0.5em;
+	color: white;
 }
 
 .name,
@@ -90,7 +91,7 @@ figcaption {
 
 .main-nav a {
 	display: block;
-	padding: 5px;
+	padding: 0.5em;
 }
 
 
@@ -99,7 +100,7 @@ figcaption {
 .main-header {
 	padding-top: .5em;
 	padding-bottom: .5em;
-	background: #001933;
+	background-color: #001933;
 }
 
 .main-content {
@@ -117,6 +118,7 @@ figcaption {
 
 .col {
 	padding: .5em;
+	display: block;
 }
 
 
@@ -124,13 +126,14 @@ figcaption {
   Media Queries
 ==================================== */
 
-/* ---- For mobile phones ---- */
+/* ---- For Tables ---- */
 
 @media (min-width: 769px) {
 	
 	.main-header, 
 	.main-nav,
-	.main-content {
+	.main-content,
+	.col {
 		display: flex;
 	}
 	
@@ -139,10 +142,15 @@ figcaption {
 		align-items: center;
 	}
 	
-	.col {
-		flex: 1 auto;
-	}
+	.main-content {
+		flex-wrap: wrap;
+		justify-content: space-around;
+	};
 	
+	.col {
+		max-width: 50%;
+		flex: 1 auto;
+	};
 	
 }
 
@@ -158,6 +166,7 @@ figcaption {
 	.name {
 		margin: auto;
 	}
+	
 	
 }
 
