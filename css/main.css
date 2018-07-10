@@ -121,6 +121,11 @@ figcaption {
 	display: block;
 }
 
+.flickr {
+	border: 5px solid red;
+	display: block;
+}
+
 
 /* ================================= 
   Media Queries
